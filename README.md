@@ -3,7 +3,7 @@
  ```console
  $ docker-compose up
  ```
-### Upload a directory of router logs
+### Upload a directory of router request logs
 ```console
  $ cat <path to logs directory>/* | nc localhost 5000
  ```
