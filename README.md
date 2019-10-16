@@ -1,4 +1,29 @@
+# JFrog
+### Run ELK
+ ```console
+ $ docker-compose up
+ ```
+### Upload a directory of router logs
+```console
+ $ cat <path to logs directory>/* | nc localhost 5000
+ ```
+
+Then simply navigate to 
+```console
+ http://localhost:5601
+ ```
+And play around with the data. 
+### important! - choose 'time' as the timestamp property. ###
+
+to use other log sources and filters, modify ./logstash/pipeline/logstash.conf file
+
+
+# Original repo -->
+https://github.com/deviantony/docker-elk
+#### Original repo readme -->
+
 # Elastic stack (ELK) on Docker
+
 
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Elastic Stack version](https://img.shields.io/badge/ELK-7.3.1-blue.svg?style=flat)](https://github.com/deviantony/docker-elk/issues/428)
