@@ -1,4 +1,5 @@
 # JFrog
+## ! Used internally to troubleshoot a huge amount of unified UI logs quickly !
 ### Run ELK
  ```console
  $ docker-compose up
